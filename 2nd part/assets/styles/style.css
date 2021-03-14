@@ -1,5 +1,5 @@
 * {
-    /*border: 1px solid red;*/
+    
     box-sizing: border-box;
 }
 
@@ -9,39 +9,56 @@
     .wrapper {
         margin: 0 auto;
         width: 100%;
-        max-width: 405px;
+        max-width: 390px;
 
     }
 
-    .header_line {
-        display: flex;
-        flex-direction: column;
-        width: 30%;
-    }
-
-    .header_inner {
+    .header-line {
         display: flex;
         flex-direction: column;
 
-
     }
 
-    #cart_icon {
+    .button-cart {
+        display: flex;
+        width: 30vw;
+        background-color: #5222D0;
+        border-radius: 100px;
+        margin-top: 30px;
+    }
+
+    .button-cart__text {
+        margin-right: 5px;
+        padding: 10px;
+        font-family: 'Roboto Slab';
+        font-weight: 400;
+        font-size: 3vh;
+        color: #fff;
+        text-transform: uppercase;
+    }
+
+    #cart-icon{
         display: none;
+    }
+
+    .header-inner {
+        display: flex;
+        flex-direction: column;
     }
 
     #creditcard {
         display: none;
     }
 
-    .header_inner_left_part {
+    .header-inner__left-part {
         display: flex;
         width: 100%;
         flex-direction: column;
 
+
     }
 
-    .left_part_title {
+    .inner__left-part_title {
         margin-top: 50px;
         line-height: 30px;
         font-family: 'Roboto Slab';
@@ -51,19 +68,21 @@
 
     }
 
-    .left_part_text {
+    .inner__left-part_text {
         margin-top: 10px;
         font-family: Roboto Slab;
         font-style: normal;
         font-weight: 300;
         font-size: 13px;
+        line-height: 25px;
 
     }
 
-    .left_part_button {
+    .inner__left-part_button {
+
         margin-top: 30px;
         display: flex;
-        width: 30%;
+        width: 25vw;
         padding: 10px;
         border-radius: 100px;
         background-color: #5222D0;
@@ -71,13 +90,23 @@
 
     }
 
-    .left_part_button_text {
+    .left-part__button_text {
+
         padding-right: 10px;
         font-family: Roboto Slab;
         font-style: normal;
         font-weight: normal;
-        font-size: 20px;
+        font-size: 2vh;
         color: #fff;
+
+    }
+
+    .inner__right-part_picture{
+        margin-top: 15px;
+        margin-left: 23px;
+        display: grid;
+        width: 80vw;
+        height: 50vh;
     }
 
     .nav {
@@ -88,7 +117,7 @@
 
     }
 
-    .nav_item {
+    .nav__item{
         font-family: Roboto Slab;
         font-style: normal;
         font-weight: 300;
@@ -98,19 +127,23 @@
         color: #5222D0;
     }
 
-    .header_inner_right_part {
-
-        background-image: url('assets/images/backgroundboy.svg');
-
+    .main-title {
+        margin-top: 80px;
+        margin-bottom: 15px;
+        font-family: 'Roboto Slab';
+        text-transform: uppercase;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
     }
 
-    .right_part_picture {
-        margin-top: 15px;
-        margin-left: 23px;
-        display: grid;
-        width: 80vw;
-        height: 50vh;
+
+    #exampleInputEmail1 {
+        width: 70vw;
     }
+
+
+
 }
 
 
@@ -121,25 +154,43 @@
         max-width: 1292px;
     }
 
-    .header_inner {
-        display: flex;
-
-    }
-
-    .header_inner_left_part {
-        display: flex;
-        width: 50%;
-        flex-direction: column;
-
-    }
-
-    .header_line {
+    .header-line {
         display: flex;
         justify-content: space-between;
 
     }
 
-    .left_part_title {
+    .button-cart {
+        display: flex;
+        background-color: #5222D0;
+        border-radius: 100px;
+        padding-right: 15px;
+        margin-top: 30px;
+    }
+
+    .button-cart__text{
+        margin-right: 5px;
+        padding: 10px 15px;
+        font-family: 'Roboto Slab';
+        font-weight: 400;
+        font-size: 18px;
+        color: #fff;
+        text-transform: uppercase;
+    }
+
+
+    .header-inner {
+        display: flex;
+
+    }
+
+    .header-inner__left-part {
+        display: flex;
+        width: 50%;
+        flex-direction: column;
+    }
+
+    .inner__left-part_title {
         margin-top: 80px;
         line-height: 60px;
         font-family: 'Roboto Slab';
@@ -148,7 +199,7 @@
         font-size: 60px;
     }
 
-    .left_part_text {
+    .inner__left-part_text {
         margin-top: 10px;
         font-family: Roboto Slab;
         font-style: normal;
@@ -156,7 +207,7 @@
         font-size: 20px;
     }
 
-    .left_part_button {
+    .inner__left-part_button {
         margin-top: 30px;
         display: flex;
         width: 40%;
@@ -166,7 +217,7 @@
         text-transform: uppercase;
     }
 
-    .left_part_button_text {
+    .left-part__button_text {
         padding-right: 10px;
         font-family: Roboto Slab;
         font-style: normal;
@@ -175,28 +226,11 @@
         color: #fff;
     }
 
-    .nav {
-        margin-top: 120px;
-        display: flex;
-        justify-content: space-between;
-
-    }
-
-    .nav_item {
-        font-family: Roboto Slab;
-        font-style: normal;
-        font-weight: 300;
-        font-size: 20px;
-        margin-right: 0px;
-        margin-bottom: 30px;
-        color: #5222D0;
-    }
-
-    .header_inner_right_part {
+    .header-inner__right-part {
         background-image: url('assets/images/backgroundboy.svg');
     }
 
-    .right_part_picture {
+    .inner__right-part_picture {
         margin-top: 30px;
         margin-left: 43px;
         display: grid;
@@ -204,15 +238,48 @@
         height: 90vh;
     }
 
+    .nav {
+        margin-top: 120px;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .nav__item {
+        font-family: Roboto Slab;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 20px;
+        margin-right: 34px;
+        margin-bottom: 30px;
+        color: #5222D0;
+    }
+
+
+    .main-title {
+        margin-top: 80px;
+        margin-bottom: 15px;
+        font-family: 'Roboto Slab';
+        text-transform: uppercase;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 56px;
+    }
+
+
+    #exampleInputEmail1 {
+        width: 20vw;
+
+    }
+
 }
 
 
-.header_logo {
+.header-line__logo {
     display: flex;
     margin-top: 30px;
 }
 
-.header_logo_name {
+.header-line__logo_logo-name {
     padding-top: 5px;
     font-family: 'Roboto Slab';
     font-weight: 800;
@@ -221,22 +288,44 @@
 
 }
 
-.button_cart {
-    display: flex;
-    background-color: #5222D0;
-    border-radius: 100px;
-    padding-right: 15px;
-    margin-top: 30px;
 
+.card-text {
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
 }
 
-.button_cart_text {
+.card-img-top {
+    background-color: #EC615B;
+    width: 70vw;
+    height: 40vh;
+}
 
-    margin-right: 5px;
-    padding: 10px 15px;
-    font-family: 'Roboto Slab';
-    font-weight: 400;
+.form {
+    padding-top: 10px;
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    background-color: #EC615B;
+    color: #FFFFFF;
+}
+
+.form-group {
+    margin-left: 20px;
+}
+
+.btn_subscr {
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: bold;
     font-size: 18px;
-    color: #fff;
-    text-transform: uppercase;
+
+    color: #FFFFFF;
+    background-color: #5222D0;
+    border-radius: 100px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    margin-bottom: 50px;
 }
